@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fb1d2a5-af38-462a-a76c-af5a5ffc585e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Allianz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/img/CS Investment Funds 3 - Credit Suisse (Lux) Emerging Market Corporate Bond Fund IA USD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdf2/Allianz Global Small Cap Equity WT USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/connected_components.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/image_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/imageprocessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/region.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc_analyzer/text_segmenter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table_ml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdf3/CS Investment Funds 3 - Credit Suisse (Lux) Emerging Market Corporate Bond Fund IA USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdf3/GS Glb Sm Cp CORE Eq I Acc USD Snap.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdf3/Multicooperation SICAV - Julius Baer Fixed Income Emerging Markets Corporate USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/AXAWF Fram Global Small Cap I Cap USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Aviva Investors Global Convertibles Absolute Return Fund Class I - Factsheet.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Aviva Investors Valeurs Europe Class I - Reporting mensuel_trimestriel.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/BNP Euro Valmeurs Durables.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/BlackRock Global Funds - ESG Emerging Markets Corporate Bond Fund.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/BlackRock Global Funds - Systematic Global Small Cap Fund.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/CS Invm Fds 3 - Credit Suisse (Lux) Emerging Market Corporate Investment Grade Bond Fund IA USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/CamGestion_Convertibles_Europe_Part_I.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Carmignac Grande Europe Factsheet_LU0099161993_LU_EN.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Daiwa_Global_Funds_-_DAIWA_SOLUTIONS_OPTIMIZER_JAPANESE_EQUITY_FUND_-_LU8838_FACTSHEET_Report_20210430_LU1983256436.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Dimensional Global Small Coms USD Acc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Ecofi Convertibles Euro_FR0010191908.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/FR_FFG_GlobalFlex_Sust_AccI.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/FR_FFG_GlobalFlex_Sust_DisC.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/FR_FFG_GlobalFlex_Sust_DisR.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/IE00BFY0GT14_MR_NL_en.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/IndexIQFactorsSustainableEuropeEquity_REP_I_UCITSETF_20210430_EN_AC_1781.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Invesco Dev Sm and MidCap Eq S USD Acc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Invesco Global Small Cap Eq C USD AD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/JPM Emerging Markets Corporate Bond C (acc) - USD[LU_EN][5_10_2021].pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/JPM Europe Sustainable Equity I (acc) - EUR[LU_EN][10_27_2020].pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/JPM Global Convertibles (EUR) I (acc) - EUR.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Kempen (Lux) Global Small-Cap I USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/LFDE Major growth Europe - Factsheet - FR-FR0010321828.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/LO Funds - Convertible Bonds.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/LU0611395327 Factsheet Ninety One.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/M G (Lux) Emerging Markets Corporate ESG Bond Fund A USD Income.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/NN (L) Global Convertible Opportunities.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Nomura American Century Glbl Sm Cap Eq F USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Nordea 1 - Global Small Cap BI USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Nordea European Equity Starts Facsheet.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Pictet Quest Eur. Sust Eq-P EUR_FACTSHEET_LU0144509717_EN_DEFAULT_30Sep2020.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Pictet-Emerging Corporate Bonds I USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Robeco Sustainable European Stars Equities Factsheet.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/Schroder ISF Global Smlr Coms C Acc USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-en-gb.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/dnca-invest-convertibles_lu0401808935.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/iShares J P Morgan EM Corp Bond UCITS ETF USD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdfs/images/FR_FFG_GlobalFlex_Sust_AccR.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/pdf2text.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/pdf2text.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Debug.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Debug.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example.py" beforeDir="false" afterPath="$PROJECT_DIR$/../example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/alignement_region.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/component.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/paragraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/paragraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/region.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/region2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/space_region.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/word.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/version.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2RC7COv0BfCKHUpeW2FGgzjfKnY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fb1d2a5-af38-462a-a76c-af5a5ffc585e" name="Changes" comment="" />
+      <created>1686742080661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686742080661</updated>
+    </task>
+    <servers />
+  </component>
+</project>
