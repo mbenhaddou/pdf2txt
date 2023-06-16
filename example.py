@@ -1,12 +1,12 @@
 from pdf2txt.core import Document
 import pytesseract
-import os#, cv2
+import os, re#, cv2
 from pdf2txt.utils import TemporaryDirectory, get_page_layout, convert_pdf_to_image
 import pdf2image
 import regex as reg
 from pdf2txt.doc_analyzer.image_analyzer import PageAnalyzer
 #region_extractor=RegionExtractor()
-
+from pdf2txt import PdfReader
 pdf0 = "/Users/mohamedmentis/Dropbox/My Mac (MacBook-Pro.local)/Documents/Mentis/Development/Python/candriam_entities_api/pdfs/Aviva Investors Global Convertibles Absolute Return Fund Class I - Factsheet.pdf"
 pdf1 = "pdfs/BNP Euro Valmeurs Durables.pdf"
 pdf2 = "pdfs/Carmignac Grande Europe Factsheet_LU0099161993_LU_EN.pdf"
@@ -77,7 +77,13 @@ pdf10="/Users/mohamedmentis/Dropbox/My Mac (MacBook-Pro.local)/Documents/Mentis/
 pdf3 = "/Users/mohamedmentis/Dropbox/Mac (2)/Documents/Mentis/Development/Projects/RL_Article/1906.03926.pdf"
 pdf22="/Users/mohamedmentis/Dropbox/My Mac (MacBook-Pro.local)/Documents/Mentis/Development/Python/candriam_entities_api/pdfs/JPM Global Convertibles (EUR) I (acc) - EUR.pdf"
 
-run_file(pdf3)
+def load_pdf(file_path):
+
+    pdf = PdfReader(file_path)
+
+    return pdf.extract_text()
+
+print(load_pdf(pdf3))
 #run_from_folder("pdf3")
 
 
