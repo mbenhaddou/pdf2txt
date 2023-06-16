@@ -64,10 +64,14 @@ def run_file(filename):
 
     for page in pdf_doc.pages:
         page.detect_semantic_structure()
+#        print(page.Text)
         print("=============================")
 
     print(pdf_doc.Title)
     print(pdf_doc.Text)
+
+    for paragraph in pdf_doc.paragraphs:
+        print(paragraph)
 
 pdf10="/Users/mohamedmentis/Dropbox/My Mac (MacBook-Pro.local)/Documents/Mentis/Development/Python/candriam_entities_api/pdfs/Aviva Investors Global Convertibles Absolute Return Fund Class I - Factsheet.pdf"
 pdf3 = "/Users/mohamedmentis/Dropbox/Mac (2)/Documents/Mentis/Development/Projects/RL_Article/1906.03926.pdf"

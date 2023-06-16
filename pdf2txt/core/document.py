@@ -32,7 +32,7 @@ class Document(Component):
         rsrcmgr = PDFResourceManager()
         self.doc = PDFDocument(PDFParser(stream), password=password)
         self.metadata = {}
-        self.paragraphs=Paragraphs(self)
+        self._paragraphs=Paragraphs(self)
         self.fix_with_ocr=fix_with_ocr
         self._token_list = []
         self._element_indexes_by_font = defaultdict(set)
@@ -142,13 +142,16 @@ class Document(Component):
         """
         return TokenList(self)
 
+    @property
+    def paragraphs(self):
+        return self._paragraphs.paragraphs
 
     def pretty_print(self):
-        for p in self.paragraphs.paragraphs:
+        for p in self.paragraphs:
             print(p.Text)
     @property
     def Text(self):
-        return '\n'.join([p.Text for p in self.paragraphs.paragraphs])
+        return '\n'.join([p.Text for p in self._paragraphs.paragraphs])
 
     def get_text_matches_regex(self, regex_str, case_sensitive=True):
         """

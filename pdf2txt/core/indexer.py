@@ -11,7 +11,7 @@ def build_index(pdf_document):
 
     # Preprocesses and indexes collection per document.
 
-    for paragraph in pdf_document.paragraphs.paragraphs:
+    for paragraph in pdf_document._paragraphs._paragraphs:
         docnumber = paragraph.number
 
         text = paragraph.Text

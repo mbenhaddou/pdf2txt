@@ -106,7 +106,7 @@ class Page(Component):
             for p in paragraphs:
                 check_title = True
                 paragraph_number += 1
-                paragraph = self.document.paragraphs.get_last_paragraph()
+                paragraph = self.document._paragraphs.get_last_paragraph()
 
                 for n, tl in enumerate(p):
                     if isinstance(tl, Table) or isinstance(tl, DataFrame):
@@ -117,7 +117,7 @@ class Page(Component):
                                                                                                                  page_font_statistics,
                                                                                                                  title_font={}):
                                 del paragraph.content[-1]
-                                paragraph = self.document.paragraphs.create_paragraph()
+                                paragraph = self.document._paragraphs.create_paragraph()
                                 paragraph.title = t
                                 check_title = False
                             else:
@@ -133,19 +133,19 @@ class Page(Component):
                                         if check_title and t is not None and self.is_title2([t], page_font_statistics,
                                                                                             page_font_statistics,
                                                                                             title_font):
-                                            paragraph = self.document.paragraphs.create_paragraph()
+                                            paragraph = self.document._paragraphs.create_paragraph()
                                             paragraph.title = [t]
                                         if paragraph is None:
-                                            paragraph = self.document.paragraphs.create_paragraph()
+                                            paragraph = self.document._paragraphs.create_paragraph()
                         elif paragraph is None:
-                            paragraph = self.document.paragraphs.create_paragraph()
+                            paragraph = self.document._paragraphs.create_paragraph()
                         paragraph.add_content(tl, ContentType.Table)
 
                     elif check_title and (
                             paragraph is None or self.is_title2(tl, font_statistics, page_font_statistics, title_font,
                                                                 font_body)):
-                        #                        existing_title=self.document.paragraphs.filter_by_title_equal(tl)
-                        paragraph = self.document.paragraphs.create_paragraph()
+                        #                        existing_title=self.document._paragraphs.filter_by_title_equal(tl)
+                        paragraph = self.document._paragraphs.create_paragraph()
                         paragraph.title = tl
                         title_font['name'] = tl[0].font + str(tl[0].Text.isupper() or tl[0].is_bold)
                         title_font['size'] = tl[0].font_size
@@ -176,9 +176,9 @@ class Page(Component):
                 paragraphs = self.extract_paragraph(region)
                 doc_paragraph=None
                 for paragraph in paragraphs:
-                    last_paragraph=self.document.paragraphs.get_last_paragraph()
+                    last_paragraph=self.document._paragraphs.get_last_paragraph()
                     if last_paragraph is None:
-                        doc_paragraph = self.document.paragraphs.create_paragraph()
+                        doc_paragraph = self.document._paragraphs.create_paragraph()
                     if isinstance(paragraph, Chart):
                         if doc_paragraph is not None:
                             doc_paragraph.add_content(paragraph, ContentType.Chart)
@@ -192,12 +192,12 @@ class Page(Component):
                             last_paragraph.add_content(paragraph, ContentType.Table)
                         continue
                     for line in paragraph:
-                        if self.is_title(line, titles, title_font):
+                        if self.is_title(line, title_font, self.font_statistics):
 #                            print(line)
                             if last_paragraph is not None and last_paragraph.title==line:
                                 continue
 
-                            doc_paragraph = self.document.paragraphs.create_paragraph()
+                            doc_paragraph = self.document._paragraphs.create_paragraph()
                             doc_paragraph.title=line
                         else:
                             if doc_paragraph is not None:
@@ -386,37 +386,37 @@ class Page(Component):
                 region.text_lines.remove(l)
         return False
 
-    def is_title(self, line, titles, title_font={}):
+    def is_title(self, line, title_font, font_stat={}):
 
-        return line in titles
-        # if len(line)>1:
-        #     return False
-        #
-        # if line[0].font_size >= font_stat["second_largest"]:
-        #     title_font['font']=line[0].font
-        #     return True
-        #
-        # if title_font:
-        #     if line[0].font == title_font['font']:
-        #         return True
-        #     else:
-        #         return False
-        #
-        # if len(line)==1 and utils.get_type(line[0].Text)=="Numeric":
-        #     return False
-        #
-        # if len(font_stat["size_by_frequency"])==1 and line[0].is_bold:
-        #     title_font['font']=line[0].font
-        #     return True
-        #
-        # if len(font_stat["size_by_frequency"])==1 and len(font_stat["name_by_frequency"])==1:
-        #     return False
-        #
-        # if id==0:
-        #     title_font['font'] = line[0].font
-        #     return True
-        #
-        # return False
+#        return line in titles
+        if len(line)>1 or not line[0].Text.istitle():
+            return False
+
+        if line[0].font_size >= font_stat["second_largest"]:
+            title_font['font']=line[0].font
+            return True
+
+        if title_font:
+            if line[0].font == title_font['font']:
+                return True
+            else:
+                return False
+
+        if len(line)==1 and utils.get_type(line[0].Text)=="Numeric":
+            return False
+
+        if len(font_stat["size_by_frequency"])==1 and line[0].is_bold:
+            title_font['font']=line[0].font
+            return True
+
+        if len(font_stat["size_by_frequency"])==1 and len(font_stat["name_by_frequency"])==1:
+            return False
+
+        if id==0:
+            title_font['font'] = line[0].font
+            return True
+
+        return False
 
     def _has_match(self, sorted_list, item):
         #       show_rects_and_wait(sorted_list, self.page_image)
